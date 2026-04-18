@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Super Computer Institute | Precision in Education",
+  title: "Super Computer College of IT | Precision in Education",
   description: "Empowering the next generation of tech leaders with precision and excellence since 2010.",
 };
 

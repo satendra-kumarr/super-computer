@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import FadeIn from '../components/FadeIn';
+import Image from 'next/image';
 
 const courses = [
   {
@@ -123,7 +124,7 @@ export default function Courses() {
             filteredCourses.map((course) => (
               <FadeIn key={course.id} className="group bg-white rounded-[2rem] p-6 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] flex flex-col border border-slate-100 relative overflow-hidden">
                 <div className="h-48 w-full rounded-2xl mb-6 overflow-hidden relative">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={course.name} src={course.img} />
+                  <Image className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={course.name} src={course.img} fill sizes="(max-width: 1024px) 100vw, 33vw" />
                   {course.tag && (
                     <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181c20] px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm">
                       {course.tag}
@@ -193,9 +194,9 @@ export default function Courses() {
                   ))}
                 </div>
              </div>
-             <div className="relative group">
-                <div className="absolute -inset-4 bg-[#b9d719]/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <img src="/images/IMG-11.jpeg" className="rounded-[3rem] shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700 h-[500px] w-full object-cover" alt="Methodology" />
+             <div className="relative group rounded-[3rem] overflow-hidden h-[300px] md:h-[500px]">
+                <div className="absolute inset-0 bg-[#b9d719]/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity z-20"></div>
+                <Image src="/images/IMG-11.jpeg" className="object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Methodology" fill sizes="(max-width: 1024px) 100vw, 50vw" />
              </div>
           </div>
         </FadeIn>

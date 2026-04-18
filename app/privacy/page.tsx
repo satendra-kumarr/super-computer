@@ -1,6 +1,7 @@
 'use client';
 
 import FadeIn from '../components/FadeIn';
+import Image from 'next/image';
 
 const privacyCards = [
   {
@@ -86,14 +87,14 @@ export default function Privacy() {
                 <div className="flex gap-4 items-start">
                   <div className="w-1.5 h-24 bg-gradient-to-b from-[#b9d719] to-transparent"></div>
                   <p className="text-slate-400 font-medium leading-relaxed py-2 text-lg">
-                    Our internal systems are audited against the best practices of data management. We ensure that Super Computer Institute remains a safe haven for students' digital identity in a complex tech landscape.
+                    Our internal systems are audited against the best practices of data management. We ensure that Super Computer College of IT remains a safe haven for students' digital identity in a complex tech landscape.
                   </p>
                 </div>
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
               <div className="aspect-video rounded-[3rem] overflow-hidden shadow-3xl bg-slate-800 relative group">
-                <img src="/images/IMG-1.jpg" alt="Secure Infrastructure" className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000" />
+                <Image src="/images/IMG-1.jpg" alt="Secure Infrastructure" className="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000" fill sizes="(max-width: 1024px) 100vw, 50vw" />
                 <div className="absolute inset-0 border-[20px] border-[#181c20]"></div>
               </div>
             </FadeIn>

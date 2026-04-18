@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import FadeIn from '../components/FadeIn';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -25,7 +26,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-base md:text-lg lg:text-xl text-slate-600 mb-8 leading-relaxed font-medium max-w-xl mx-auto lg:mx-0">
-                Super Computer Institute goes beyond traditional education. We are a crucible for talent, transforming raw potential into elite, industry-ready professionals.
+                Super Computer College of IT goes beyond traditional education. We are a crucible for talent, transforming raw potential into elite, industry-ready professionals.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <button data-enquiry-modal="true" className="w-full sm:w-auto bg-[#b9d719] text-[#181e00] px-8 py-4 rounded-xl font-bold tracking-wide shadow-xl shadow-[#b9d719]/20 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300">
@@ -36,10 +37,13 @@ export default function AboutPage() {
 
             <div className="w-full lg:w-1/2 relative">
               <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgb(0,0,0,0.1)]">
-                <img
+                <Image
                   src="/images/IMG-2.jpeg"
                   alt="Students celebrating graduation"
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
@@ -86,10 +90,12 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
             <div className="w-full lg:w-1/2 relative">
               <div className="relative aspect-square md:aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/IMG-01.jpg"
                   alt="Modern tech classroom"
                   className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
               {/* Decorative square */}
@@ -103,7 +109,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-slate-600 font-medium leading-relaxed">
                 <p>
-                  Founded in 2010, the Super Computer Institute began with a singular vision: to destroy the pervasive skill gap in the technology sector. We recognized early on that universities were teaching theory, while companies were demanding execution.
+                  Founded in 2010, the Super Computer College of IT began with a singular vision: to destroy the pervasive skill gap in the technology sector. We recognized early on that universities were teaching theory, while companies were demanding execution.
                 </p>
                 <p>
                   We built a hyper-focused environment that mirrors modern enterprise workflows. By integrating production-grade practices into an academic setting, our curriculum ensures that day-one graduates perform like mid-level professionals.
@@ -179,10 +185,12 @@ export default function AboutPage() {
             </div>
             <div className="w-full lg:w-1/2 relative">
               <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/IMG-3.jpeg"
-                  alt="Super Computer Institute Faculty"
+                  alt="Super Computer College of IT Faculty"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
             </div>

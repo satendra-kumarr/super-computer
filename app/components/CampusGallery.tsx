@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function CampusGallery() {
   const [showAll, setShowAll] = useState(false);
@@ -36,11 +37,12 @@ export default function CampusGallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 transition-all duration-500">
         {displayedImages.map((img) => (
           <div key={img.id} className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer border border-slate-100 bg-slate-50">
-            <img
+            <Image
               src={img.src}
               alt={img.alt}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              loading="lazy"
+              fill
+              sizes="(max-width: 1024px) 100vw, 33vw"
             />
           </div>
         ))}

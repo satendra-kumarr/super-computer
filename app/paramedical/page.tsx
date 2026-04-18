@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import FadeIn from '../components/FadeIn';
+import Image from 'next/image';
 
 const paramedicalCourses = [
   {
@@ -128,7 +129,7 @@ export default function Paramedical() {
             filteredCourses.map((course) => (
               <FadeIn key={course.id} className="group bg-white rounded-[2.5rem] border border-slate-100 p-0 transition-all duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] flex flex-col h-full overflow-hidden">
                 <div className="h-56 w-full overflow-hidden relative">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt={course.name} src={course.img} />
+                  <Image className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" alt={course.name} src={course.img} fill sizes="(max-width: 1024px) 100vw, 33vw" />
                   {course.tag && (
                     <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-md">
                       {course.tag}

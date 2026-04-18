@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full rounded-t-[2.5rem] mt-20 bg-slate-50 dark:bg-slate-950">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 px-6 md:px-12 py-10 md:py-14 max-w-7xl mx-auto">
         <div className="flex flex-col">
-          <span className="text-lg font-black text-slate-900 dark:text-white mb-4 block">Super Computer Institute</span>
+          <span className="text-lg font-black text-slate-900 dark:text-white mb-4 block">Super Computer College of IT</span>
           <p className="text-slate-500 dark:text-slate-400 font-['Inter'] text-base md:text-lg leading-relaxed mb-6 italic opacity-90">
             Empowering the next generation of tech leaders with precision and excellence since 2010.
           </p>
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-200 dark:border-slate-800 max-w-7xl mx-auto px-6 md:px-12 py-6 md:py-8 text-center text-slate-500 dark:text-slate-400 text-xs font-['Inter']">
-        © 2026 Super Computer Institute. Precision in Education.
+        © 2026 Super Computer College of IT. Precision in Education.
       </div>
     </footer>
   );

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -53,15 +54,17 @@ export default function Navbar() {
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3 group" onClick={() => setMobileMenuOpen(false)}>
           <div className="w-11 h-11 rounded-xl flex items-center justify-center overflow-hidden bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)] border border-slate-100 dark:border-slate-800 group-hover:scale-105 transition-transform duration-300 relative">
-            <img
+            <Image
               src="/images/logo.png"
-              alt="Super Computer Institute Logo"
+              alt="Super Computer College of IT Logo"
               className="w-full h-full object-cover scale-[0.8]"
+              fill
+              sizes="44px"
             />
           </div>
           <div className="flex flex-col tracking-tighter">
             <span className="text-xl font-black leading-none text-slate-900 dark:text-white">Super Computer</span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#556500] dark:text-[#b9d719] mt-0.5">Institute</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#556500] dark:text-[#b9d719] mt-0.5">College of IT</span>
           </div>
         </Link>
 

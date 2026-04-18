@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import FadeIn from '../components/FadeIn';
+import Image from 'next/image';
 
 const degrees = [
   {
@@ -153,7 +154,7 @@ export default function Degrees() {
             filteredDegrees.map((degree) => (
               <FadeIn key={degree.id} className="group bg-white rounded-[2.5rem] border border-slate-100 p-8 hover:shadow-[0_30px_60px_rgba(0,0,0,0.06)] transition-all duration-500 flex flex-col">
                 <div className="h-56 w-full rounded-[2rem] overflow-hidden mb-8 relative">
-                  <img src={degree.img} alt={degree.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                  <Image src={degree.img} alt={degree.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" fill sizes="(max-width: 1024px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#181c20]/80 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-bold text-[#b9d719] uppercase tracking-widest">
                     {degree.category}
                   </div>
@@ -222,7 +223,7 @@ export default function Degrees() {
           </div>
           <div className="w-full lg:w-1/2 relative">
             <div className="absolute -inset-10 bg-[#b9d719]/10 rounded-full blur-3xl"></div>
-            <img src="/images/about-graduates.png" className="relative rounded-[3rem] shadow-3xl rotate-2" alt="Graduates" />
+            <Image src="/images/about-graduates.png" width={800} height={800} className="relative rounded-[3rem] shadow-3xl rotate-2 w-full h-auto" alt="Graduates" />
           </div>
         </FadeIn>
       </main>

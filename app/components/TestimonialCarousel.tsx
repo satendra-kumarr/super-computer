@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const testimonials = [
   {
     id: 1,
-    quote: "The practical approach at Super Computer Institute was exactly what I needed. I landed my dream role at a Fortune 500 company before even finishing my course.",
+    quote: "The practical approach at Super Computer College of IT was exactly what I needed. I landed my dream role at a Fortune 500 company before even finishing my course.",
     name: "Rahul Sharma",
     role: "Cloud Engineer, Tech Mahindra",
     image: "/images/testimonial-1.png",
@@ -103,10 +104,12 @@ export default function TestimonialCarousel() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-[#b9d719]/30">
-                  <img 
+                  <Image 
                     src={t.image} 
                     alt={t.name}
                     className="w-full h-full object-cover"
+                    width={48}
+                    height={48}
                   />
                 </div>
                 <div>

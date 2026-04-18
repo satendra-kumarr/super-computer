@@ -4,6 +4,7 @@ import Link from 'next/link';
 import FadeIn from './components/FadeIn';
 import TestimonialCarousel from './components/TestimonialCarousel';
 import CampusGallery from './components/CampusGallery';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
               <div className="relative w-full aspect-square max-w-md">
                 {/* Inner container for image with overflow-hidden */}
                 <div className="absolute inset-0 bg-white rounded-[2.5rem] shadow-[0_20px_50px_rgb(0,0,0,0.07)] overflow-hidden flex items-center justify-center">
-                  <img alt="Student working on laptop" className="w-full h-full object-cover relative z-10" src="/images/hero.jpg" />
+                  <Image alt="Student working on laptop" className="w-full h-full object-cover relative z-10" src="/images/hero.jpg" fill priority sizes="(max-width: 1024px) 100vw, 50vw" />
                 </div>
 
                 {/* Floating Metric Badge - relative to outer container */}
@@ -135,7 +136,7 @@ export default function Home() {
               {/* Course Card 1: ADCA */}
               <div className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full">
                 <div className="h-56 relative overflow-hidden flex items-center justify-center m-2 rounded-[1.5rem]">
-                  <img alt="ADCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/ADCA_PRO.png" />
+                  <Image alt="ADCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/ADCA_PRO.png" fill sizes="(max-width: 768px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">1 Year</div>
                 </div>
                 <div className="p-8 pt-4 flex flex-col flex-grow">
@@ -161,7 +162,7 @@ export default function Home() {
               {/* Course Card 2: DOWA */}
               <div className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full">
                 <div className="h-56 relative overflow-hidden flex items-center justify-center m-2 rounded-[1.5rem]">
-                  <img alt="DOWA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/DOWA_PRO.png" />
+                  <Image alt="DOWA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/DOWA_PRO.png" fill sizes="(max-width: 768px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">6 Months</div>
                 </div>
                 <div className="p-8 pt-4 flex flex-col flex-grow">
@@ -187,7 +188,7 @@ export default function Home() {
               {/* Course Card 3: DCA */}
               <div className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full">
                 <div className="h-56 relative overflow-hidden flex items-center justify-center m-2 rounded-[1.5rem]">
-                  <img alt="DCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/BCA.png" />
+                  <Image alt="DCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/images/BCA.png" fill sizes="(max-width: 768px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">6 Months</div>
                 </div>
                 <div className="p-8 pt-4 flex flex-col flex-grow">
@@ -232,7 +233,7 @@ export default function Home() {
               {/* Course Card 1: BCA */}
               <div className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full">
                 <div className="h-56 relative overflow-hidden flex items-center justify-center m-2 rounded-[1.5rem]">
-                  <img src="/images/BCA.png" alt="BCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <Image src="/images/BCA.png" alt="BCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" fill sizes="(max-width: 768px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">3 Years</div>
                 </div>
                 <div className="p-8 pt-4 flex flex-col flex-grow">
@@ -259,7 +260,7 @@ export default function Home() {
               {/* Course Card 2: MCA */}
               <div className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full">
                 <div className="h-56 relative overflow-hidden flex items-center justify-center m-2 rounded-[1.5rem]">
-                  <img src="/images/MCA.png" alt="MCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <Image src="/images/MCA.png" alt="MCA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" fill sizes="(max-width: 768px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">2 Years</div>
                 </div>
                 <div className="p-8 pt-4 flex flex-col flex-grow">
@@ -286,7 +287,7 @@ export default function Home() {
               {/* Course Card 3: BBA */}
               <div className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full">
                 <div className="h-56 relative overflow-hidden flex items-center justify-center m-2 rounded-[1.5rem]">
-                  <img src="/images/BBA.png" alt="BBA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <Image src="/images/BBA.png" alt="BBA" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" fill sizes="(max-width: 768px) 100vw, 33vw" />
                   <div className="absolute top-4 left-4 bg-[#b9d719] text-[#181e00] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm">3 Years</div>
                 </div>
                 <div className="p-8 pt-4 flex flex-col flex-grow">

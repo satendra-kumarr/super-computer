@@ -51,7 +51,7 @@ export default function Contact() {
             <div className="bg-surface-container-high rounded-xl overflow-hidden shadow-sm">
               <div className="aspect-video w-full relative">
                 <iframe
-                  title="Super Computer Institute Location"
+                  title="Super Computer College of IT Location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.191688399818!2d80.81220619999999!3d25.928929999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b62a84e257fa1%3A0x7e53c14d9146a9af!2sSuper%20Computer%20College%20of%20IT!5e0!3m2!1sen!2sin!4v1776232207863!5m2!1sen!2sin"
                   className="w-full h-full border-0"
                   loading="lazy"

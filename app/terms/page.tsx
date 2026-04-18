@@ -1,12 +1,13 @@
 'use client';
 
 import FadeIn from '../components/FadeIn';
+import Image from 'next/image';
 
 const sections = [
   {
     title: "1. Enrollment & Admission",
     icon: "person_add",
-    content: "Super Computer Institute reserves the right to accept or reject any application for admission. Enrollment is only considered final once all documents are verified and the initial academic fee is processed. Students must provide genuine documents; any discrepancy will lead to immediate dismissal."
+    content: "Super Computer College of IT reserves the right to accept or reject any application for admission. Enrollment is only considered final once all documents are verified and the initial academic fee is processed. Students must provide genuine documents; any discrepancy will lead to immediate dismissal."
   },
   {
     title: "2. Academic Conduct",
@@ -26,7 +27,7 @@ const sections = [
   {
     title: "5. Intellectual Property",
     icon: "copyright",
-    content: "All course materials, project architectures, and software modules provided during the training are intellectual property of Super Computer Institute. Unauthorized reproduction or distribution is strictly prohibited and subject to legal action."
+    content: "All course materials, project architectures, and software modules provided during the training are intellectual property of Super Computer College of IT. Unauthorized reproduction or distribution is strictly prohibited and subject to legal action."
   }
 ];
 
@@ -52,7 +53,7 @@ export default function Terms() {
                 </span>
               </h1>
               <p className="text-slate-400 text-lg md:text-xl font-medium max-w-xl leading-relaxed">
-                Guidelines specifically architected to maintain the elite standards of Super Computer Institute.
+                Guidelines specifically architected to maintain the elite standards of Super Computer College of IT.
               </p>
             </FadeIn>
           </div>
@@ -61,7 +62,7 @@ export default function Terms() {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#b9d719] to-[#8a9f00] rounded-[2.5rem] blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
                 <div className="relative bg-white rounded-[2.5rem] overflow-hidden shadow-2xl h-80">
-                  <img src="/images/IMG-11.jpeg" alt="Legal framework" className="w-full h-full object-cover" />
+                  <Image src="/images/IMG-11.jpeg" alt="Legal framework" className="w-full h-full object-cover" fill sizes="(max-width: 1024px) 100vw, 50vw" />
                 </div>
               </div>
             </FadeIn>
@@ -105,8 +106,8 @@ export default function Terms() {
 
         <FadeIn className="mt-32 pt-16 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-4">
-            <img src="/images/logo.png" className="w-8 h-8 opacity-20 filter grayscale" alt="Logo" />
-            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-300">Super Computer Institute Official Document</p>
+            <Image src="/images/logo.png" className="w-8 h-8 opacity-20 filter grayscale" alt="Logo" width={32} height={32} />
+            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-300">Super Computer College of IT Official Document</p>
           </div>
           <div className="text-[10px] font-bold uppercase tracking-widest text-slate-300">Last Revised: 15.04.2026</div>
         </FadeIn>
