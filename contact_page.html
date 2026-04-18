@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#d8e2ff",
+                        "surface-container-high": "#e5e8ee",
+                        "primary": "#556500",
+                        "secondary": "#5b5f63",
+                        "secondary-fixed-dim": "#c3c7cc",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#5f6368",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#001a41",
+                        "tertiary-container": "#b2caff",
+                        "on-primary-container": "#4d5b00",
+                        "inverse-primary": "#b6d312",
+                        "background": "#f7f9ff",
+                        "tertiary-fixed-dim": "#adc7ff",
+                        "surface-container-highest": "#e0e3e8",
+                        "outline": "#767962",
+                        "surface-container": "#ebeef3",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#e0e3e8",
+                        "inverse-on-surface": "#eef1f6",
+                        "surface-bright": "#f7f9ff",
+                        "primary-fixed-dim": "#b6d312",
+                        "on-surface": "#181c20",
+                        "surface-container-low": "#f1f4f9",
+                        "secondary-container": "#dde0e5",
+                        "outline-variant": "#c6c9ae",
+                        "on-primary-fixed": "#181e00",
+                        "on-background": "#181c20",
+                        "primary-fixed": "#d1f038",
+                        "on-secondary-fixed": "#181c20",
+                        "surface-variant": "#e0e3e8",
+                        "primary-container": "#b9d719",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f7f9ff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#0052ad",
+                        "tertiary": "#005bc0",
+                        "surface-dim": "#d7dadf",
+                        "on-surface-variant": "#454934",
+                        "inverse-surface": "#2d3135",
+                        "on-primary-fixed-variant": "#404c00",
+                        "on-tertiary-fixed-variant": "#004493",
+                        "surface-tint": "#556500",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#43474c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #556500 0%, #b9d719 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-xl font-bold tracking-tighter text-[#181c20] dark:text-white">
+                Super Computer Institute
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Inter'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors duration-300" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors duration-300" href="#">Paramedical</a>
+<a class="text-[#556500] dark:text-[#b9d719] font-bold border-b-2 border-[#556500] pb-1" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden lg:block text-slate-600 font-medium text-sm hover:text-[#556500] px-4 py-2">Inquire Now</button>
+<button class="bg-[#b9d719] text-[#181e00] px-6 py-2.5 rounded-full font-bold text-sm scale-95 active:scale-90 transition-transform shadow-sm">Enroll Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-16 text-center max-w-3xl mx-auto">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-4 block">Get In Touch</span>
+<h1 class="text-5xl md:text-6xl font-black tracking-tight text-on-background mb-6 leading-[1.1]">Bridge the gap between <span class="text-primary">ambition</span> and <span class="text-primary">mastery.</span></h1>
+<p class="text-lg text-secondary-fixed-variant leading-relaxed">Whether you're starting your tech journey or specializing in paramedical excellence, our advisors are ready to guide your path.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Inquiry Form Container -->
+<section class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-[0_20px_40px_rgba(24,28,32,0.04)]">
+<div class="mb-8">
+<h2 class="text-2xl font-bold mb-2">Send an Inquiry</h2>
+<p class="text-secondary-fixed-variant">Fill out the form below and we'll respond within 24 hours.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Phone Number</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Interested Course</label>
+<select class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface">
+<option>Software Engineering</option>
+<option>Data Science</option>
+<option>Paramedical Nursing</option>
+<option>Medical Lab Tech</option>
+<option>Digital Marketing</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">How can we help?</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface" placeholder="Tell us about your goals..." rows="4"></textarea>
+</div>
+<button class="signature-gradient w-full py-4 rounded-full text-on-primary-fixed font-bold text-lg shadow-lg hover:shadow-xl transform transition-all active:scale-[0.98]" type="submit">
+                        Submit Your Inquiry
+                    </button>
+<p class="text-center text-xs text-secondary-fixed-variant mt-4">
+                        By submitting, you agree to our <a class="underline hover:text-primary" href="#">Privacy Policy</a>.
+                    </p>
+</form>
+</section>
+<!-- Contact Details & Map -->
+<aside class="lg:col-span-5 space-y-8">
+<!-- Contact Info Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-white p-6 rounded-xl border border-outline-variant/15 flex items-start space-x-4">
+<div class="bg-primary-container/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="text-xs font-bold text-secondary-fixed-variant uppercase tracking-wider mb-1">Phone</p>
+<p class="text-on-surface font-semibold">+1 234 567 890</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl border border-outline-variant/15 flex items-start space-x-4">
+<div class="bg-primary-container/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-xs font-bold text-secondary-fixed-variant uppercase tracking-wider mb-1">Email</p>
+<p class="text-on-surface font-semibold">admissions@sci.edu</p>
+</div>
+</div>
+</div>
+<!-- Address & Map Container -->
+<div class="bg-surface-container-high rounded-xl overflow-hidden shadow-sm">
+<div class="aspect-video w-full relative">
+<img class="w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="clean minimalist city map with green accents showing the location of a modern educational campus" data-location="New York" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsEU2Z17Ie-yLwcJI2wAo3JVVupyxb3enREx-AUoB11R7oaK-BJ_xGVq1dTNXgfZ-FE_50F8biX_XmlXoE6TKmyvUMA_abm_i8t0f6wF8zQLa33Ih-_T9QF9uo3LkrtWXrtcKjpBi1llWbRYT_Rcn5QAe9Sl7TuzKCAG9lvl6cME3udnRS8Wfeksc8mh-L0bTSjIG_JDOaT9AQLFFwz4row9WuBaRghqx2Mshbu5WsvHNoorCu_s3oHfutw1ZSncr91td_IE4khatb"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-white p-3 rounded-full shadow-2xl animate-pulse">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+<div class="p-8 bg-white">
+<h3 class="text-xl font-bold mb-4">Main Campus</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            128 Tech Avenue, Innovation District<br/>
+                            Super City, SC 54032
+                        </p>
+<div class="pt-6 border-t border-outline-variant/20">
+<h4 class="text-sm font-bold text-secondary-fixed-variant uppercase tracking-widest mb-4">Office Hours</h4>
+<div class="space-y-2">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Monday — Friday</span>
+<span class="font-bold">08:00 — 20:00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Saturday</span>
+<span class="font-bold">09:00 — 16:00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Sunday</span>
+<span class="text-secondary">Closed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Support Card -->
+<div class="bg-primary-fixed text-on-primary-fixed p-8 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-lg font-bold mb-2">Student Support</h3>
+<p class="text-sm opacity-90 mb-4">Already a student? Access the portal for technical assistance.</p>
+<button class="bg-on-primary-fixed text-primary-fixed px-6 py-2 rounded-full font-bold text-sm">Go to Portal</button>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl opacity-10 rotate-12" style="font-variation-settings: 'FILL' 1;">school</span>
+</div>
+</aside>
+</div>
+</main>
+<!-- SideNavBar (FAB) -->
+<div class="fixed bottom-8 right-8 z-[100]">
+<button class="bg-[#b9d719] dark:bg-[#556500] text-[#181c20] dark:text-white rounded-full h-16 w-16 flex items-center justify-center shadow-[0_20px_40px_rgba(24,28,32,0.1)] hover:scale-110 hover:rotate-3 transition-all duration-300 active:scale-90">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+</div>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2.5rem] mt-20 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<span class="text-lg font-black text-slate-900 dark:text-white mb-4 block">Super Computer Institute</span>
+<p class="text-slate-500 text-sm mb-6">Precision in Education. Shaping the next generation of technical and medical professionals.</p>
+<div class="flex space-x-4">
+<a class="text-primary hover:opacity-80" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-primary hover:opacity-80" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#556500] transition-all text-sm" href="#">About Us</a></li>
+<li><a class="text-slate-500 hover:text-[#556500] transition-all text-sm" href="#">Student Portal</a></li>
+<li><a class="text-slate-500 hover:text-[#556500] transition-all text-sm" href="#">Career Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#556500] transition-all text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-[#556500] transition-all text-sm" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-6">Newsletter</h4>
+<p class="text-slate-500 text-sm mb-4">Stay updated with course openings and tech news.</p>
+<div class="flex bg-white rounded-full p-1 border border-slate-200">
+<input class="bg-transparent border-none focus:ring-0 text-sm px-4 w-full" placeholder="Email" type="email"/>
+<button class="bg-primary text-white p-2 rounded-full"><span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200/50 py-8 text-center">
+<p class="text-slate-500 text-sm font-['Inter']">© 2024 Super Computer Institute. Precision in Education.</p>
+</div>
+</footer>
+</body></html>

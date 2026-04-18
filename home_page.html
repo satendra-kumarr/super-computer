@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Super Computer Institute | Precision in Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#d8e2ff",
+                    "surface-container-high": "#e5e8ee",
+                    "primary": "#556500",
+                    "secondary": "#5b5f63",
+                    "secondary-fixed-dim": "#c3c7cc",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#5f6368",
+                    "on-error": "#ffffff",
+                    "on-tertiary-fixed": "#001a41",
+                    "tertiary-container": "#b2caff",
+                    "on-primary-container": "#4d5b00",
+                    "inverse-primary": "#b6d312",
+                    "background": "#f7f9ff",
+                    "tertiary-fixed-dim": "#adc7ff",
+                    "surface-container-highest": "#e0e3e8",
+                    "outline": "#767962",
+                    "surface-container": "#ebeef3",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#e0e3e8",
+                    "inverse-on-surface": "#eef1f6",
+                    "surface-bright": "#f7f9ff",
+                    "primary-fixed-dim": "#b6d312",
+                    "on-surface": "#181c20",
+                    "surface-container-low": "#f1f4f9",
+                    "secondary-container": "#dde0e5",
+                    "outline-variant": "#c6c9ae",
+                    "on-primary-fixed": "#181e00",
+                    "on-background": "#181c20",
+                    "primary-fixed": "#d1f038",
+                    "on-secondary-fixed": "#181c20",
+                    "surface-variant": "#e0e3e8",
+                    "primary-container": "#b9d719",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f7f9ff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#0052ad",
+                    "tertiary": "#005bc0",
+                    "surface-dim": "#d7dadf",
+                    "on-surface-variant": "#454934",
+                    "inverse-surface": "#2d3135",
+                    "on-primary-fixed-variant": "#404c00",
+                    "on-tertiary-fixed-variant": "#004493",
+                    "surface-tint": "#556500",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#43474c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(24px);
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #556500 0%, #b9d719 100%);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-xl font-bold tracking-tighter text-[#181c20] dark:text-white">Super Computer Institute</div>
+<div class="hidden md:flex items-center space-x-8 font-['Inter'] font-medium text-sm tracking-tight">
+<a class="text-[#556500] dark:text-[#b9d719] font-bold border-b-2 border-[#556500] pb-1" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors duration-300" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors duration-300" href="#">Paramedical</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden lg:block text-slate-600 dark:text-slate-400 font-['Inter'] text-sm hover:text-[#556500] transition-all">Inquire Now</button>
+<button class="bg-[#b9d719] text-[#181e00] px-6 py-2 rounded-full font-bold text-sm scale-95 active:scale-90 transition-transform hover:bg-[#b9d719]/90">Enroll Now</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4 block">Future-Ready Skills</span>
+<h1 class="text-5xl lg:text-7xl font-black tracking-tight leading-[1.1] mb-6 text-on-background">
+                        Mastering <br/><span class="text-primary">Computer Technology</span>
+</h1>
+<p class="text-lg text-secondary max-w-xl mb-10 leading-relaxed">
+                        Step into the digital future with industry-aligned training programs designed for mastery. From coding to creative tech, we build careers that scale.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="signature-gradient text-on-primary-fixed px-8 py-4 rounded-full font-bold text-base shadow-lg shadow-primary/20 scale-95 active:scale-90 transition-transform">Explore Courses</button>
+<button class="border-2 border-outline-variant text-on-surface px-8 py-4 rounded-full font-bold text-base hover:bg-surface-container transition-all">Book a Free Counseling</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container shadow-2xl relative z-10">
+<img alt="Student working on laptop" class="w-full h-full object-cover" data-alt="Focused young professional student working on a high-end laptop in a modern, bright educational studio with neon green lighting accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9MH7Pc1C5nrmhr9XjDk26aSXWfQblP4ZbT1rMOUuUnd6mA1FbgfHuRRQbEpx75V27PQ_3HuNK8tH8buywpvSRK0fuSiDo6InitoRqJMkOobNBiJL2w2valCVcX7z890faR7qCQpy_856eqEcTncu04gR3b0wINx8rVc6ihL7-60RkOcVPguICq2etAme5OAO7yG_q7TZb4eH_EhU_z_M0Y-7Zdw0keclNOifvUv6DhBolab0W7oCoxkHYyUEkwf5Q8ILUfTZ8zdIk"/>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-primary-container rounded-full blur-3xl opacity-50 z-0"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary-container rounded-full blur-3xl opacity-30 z-0"></div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl flex items-center space-x-6">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+</div>
+<div>
+<div class="text-3xl font-black text-on-background">5000+</div>
+<div class="text-sm text-secondary font-medium">Students Trained</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl flex items-center space-x-6">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/20 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="corporate_fare">corporate_fare</span>
+</div>
+<div>
+<div class="text-3xl font-black text-on-background">50+</div>
+<div class="text-sm text-secondary font-medium">Industry Partners</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl flex items-center space-x-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="workspace_premium">workspace_premium</span>
+</div>
+<div>
+<div class="text-3xl font-black text-on-background">100%</div>
+<div class="text-sm text-secondary font-medium">Placement Support</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Courses Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-xl">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4 block">Premium Curriculum</span>
+<h2 class="text-4xl font-black tracking-tight text-on-background">Signature IT Programs</h2>
+</div>
+<a class="text-primary font-bold flex items-center space-x-2 group" href="#">
+<span>View All Courses</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Course Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] transition-all">
+<div class="h-56 relative overflow-hidden">
+<img alt="Full Stack Development" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of a high-resolution code editor showing JavaScript on a screen with soft ambient neon green reflection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu8hxRCWvVZ96PV7t3-CHl_zidvw1UROzsO82C9UxX4j3tAU-vr2KGL2_bZaWSN9finn1-QguH75b-TZIE8GepwREGwfyIdr5iLzFJrJYxRgKkKMlEAS5jCHYlU8LZAXsO2g6mkvyNF1PUoT8IwJEgBjV5ltpZBnQybah6S1JwcFBlNpxOvcV3XdPY-_duJ8OvF8sS4O39MOXEpHfFPl_dEJjPoc9FuPIE-dy9obINXY8JWpzvw6Nv2pXp_7MqTvWjENKC73VzwLzx"/>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Top Seller</div>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold mb-3 text-on-background">Full Stack Development</h3>
+<p class="text-sm text-secondary mb-6 leading-relaxed">Master MERN stack and cloud architecture with hands-on capstone projects.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">Enquire Now</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] transition-all">
+<div class="h-56 relative overflow-hidden">
+<img alt="Data Science" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Abstract 3D representation of data visualization charts and neural networks in a sleek charcoal and lime green aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnP27T4IPyt41WHBf423RRpyi926i7iftq3qUJ6FDDuGNCsOS0t7oRTpaOXMc6bKZ_C7Y7dfMOPvgVunHreyDVOlwe1TuF16oVsOYm6nvGd_etruursuqCiTNiZhoWR1iXOSNOBNQJRi5t4tUEOmB4MoImxyINhew7lKtwZ-ilIZmOSLZi7L4wrQ_vZj87BACxGlQJRdBRIALY9QJCJOdM-AO0dxF2rFpLKC2ndJ1AWxpZHaxN35LDIZ9hSL6eky6mzK_hfrsbMY98"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold mb-3 text-on-background">Data Science &amp; AI</h3>
+<p class="text-sm text-secondary mb-6 leading-relaxed">Unlock insights with Python, Machine Learning, and Big Data analytics tools.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">Enquire Now</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] transition-all lg:col-span-1 md:col-span-2">
+<div class="h-56 relative overflow-hidden">
+<img alt="Digital Marketing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist workspace with a tablet displaying marketing metrics, surrounded by clean white surfaces and natural sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdFQB8q1gxA7ht5gFKU4_oRg1l7kwznhOfgQBWtn-RI1nuJVoLyHPogrUTt29baQFnj3jLfZapDlcX-JTUBVzGcErnqXbLh1off2z387-5t6CSyOjimwX-nNDwjGud_13hQSJTN0sSqviahg4S39NN63iLS24T2Rdzs3SZQZ0fp6MgbU5nR8aZicnsefpypi-qgxK_8ukzOmsSJQWMti6dqbSC5sAilc8nDvo7f2YsSCEH4ib_PP33dvV5jIIGxSM4JbOcxVQAtntN"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-bold mb-3 text-on-background">Digital Marketing Pro</h3>
+<p class="text-sm text-secondary mb-6 leading-relaxed">Comprehensive SEO, Performance Marketing, and Social Strategy for brands.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">Enquire Now</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4 block">The Institute Advantage</span>
+<h2 class="text-4xl font-black tracking-tight text-on-background">Why Learn With Us?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-xl text-center">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/20 flex items-center justify-center text-primary mx-auto mb-6">
+<span class="material-symbols-outlined" data-icon="rocket_launch" style="font-size: 32px;">rocket_launch</span>
+</div>
+<h4 class="text-lg font-bold mb-3">Practical Training</h4>
+<p class="text-sm text-secondary leading-relaxed">Learn by doing. 80% of our curriculum is dedicated to live projects.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl text-center">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-container/20 flex items-center justify-center text-tertiary mx-auto mb-6">
+<span class="material-symbols-outlined" data-icon="person_celebrate" style="font-size: 32px;">person_celebrate</span>
+</div>
+<h4 class="text-lg font-bold mb-3">Expert Faculty</h4>
+<p class="text-sm text-secondary leading-relaxed">Instructors from top tech giants with real-world industry experience.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl text-center">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-6">
+<span class="material-symbols-outlined" data-icon="lab_profile" style="font-size: 32px;">lab_profile</span>
+</div>
+<h4 class="text-lg font-bold mb-3">Elite Lab Facilities</h4>
+<p class="text-sm text-secondary leading-relaxed">High-performance workstations and 24/7 campus lab access.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl text-center">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center text-secondary mx-auto mb-6">
+<span class="material-symbols-outlined" data-icon="verified" style="font-size: 32px;">verified</span>
+</div>
+<h4 class="text-lg font-bold mb-3">Global Certification</h4>
+<p class="text-sm text-secondary leading-relaxed">Industry-recognized credentials that open doors worldwide.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
+<div class="lg:col-span-1">
+<span class="text-primary font-bold text-xs uppercase tracking-widest mb-4 block">Success Stories</span>
+<h2 class="text-4xl font-black tracking-tight text-on-background mb-6">From Students to Professionals</h2>
+<p class="text-secondary leading-relaxed mb-8">Join thousands of successful alumni who have transformed their lives through our curriculum.</p>
+<div class="flex space-x-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined">west</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined">east</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-2">
+<div class="flex space-x-8 overflow-x-auto no-scrollbar pb-10">
+<!-- Testimonial 1 -->
+<div class="min-w-[400px] bg-surface-container-lowest p-10 rounded-xl relative">
+<span class="material-symbols-outlined text-primary-container absolute top-6 right-8 opacity-50" data-icon="format_quote" style="font-size: 48px;">format_quote</span>
+<p class="text-lg italic text-on-background mb-8 leading-relaxed">"The practical approach at Super Computer Institute was exactly what I needed. I landed my dream role at a Fortune 500 company before even finishing my course."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-slate-200">
+<img alt="Student profile" class="w-full h-full object-cover" data-alt="Portrait of a professional young man in a smart casual outfit, smiling confidently against a soft blurred office background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7EkQ5iLtSxySwsP-KJdMii9pEcBA_rQ--xJwmlCiv_yk_-NqBsW5kYsqs23nPBcNIKGhbT_CxdUGKm0H2kuSo5WGHYU3GI2rZJ1Hp0OB6HKtRuWSK0Y8mNWnC2Abafig-cMPcRUV4Z-GAqe_PMWulJozdKKQfNWlrQsfoJKSZnIMF5hi865AcEsIlaJl7z_4aJDVIiGLli2MSbK2FVR5nfOKCF6OreMMr3SeM-HCbTf6NnDaRDQWhMcLUT7bZwSBS2fL5c9HURS9J"/>
+</div>
+<div>
+<div class="font-bold text-on-background">Rahul Sharma</div>
+<div class="text-xs text-secondary">Cloud Engineer, Tech Mahindra</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[400px] bg-surface-container-lowest p-10 rounded-xl relative">
+<span class="material-symbols-outlined text-primary-container absolute top-6 right-8 opacity-50" data-icon="format_quote" style="font-size: 48px;">format_quote</span>
+<p class="text-lg italic text-on-background mb-8 leading-relaxed">"Excellent faculty and well-structured curriculum. The placement cell helped me refine my interview skills, making me industry-ready from day one."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-slate-200">
+<img alt="Student profile" class="w-full h-full object-cover" data-alt="Portrait of a young woman with glasses, smiling professionally, sitting in a modern co-working space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQiGAPMKC2O3AfdIk2fs62FUJW2nPvvo1M_XwGLo0G342kM2NUVfk_74cHi-Up_bNHQNzTo-jSEbnVdUOe6h813e-6VTC6sEaTtAiDKYXIkDZ0ZJSeJA1y6S1m_PRVaUyCbJDOztOUMW6J9RZjthcDk1f1xQzUApRvkJ1htFGbuIZfGWBWlz6tOsmeic2IPw3BWmige2KxVS_V-cf_zZC5M1LKknGkKxPqNuuAP5I33l-6ITqdvWDWjst20I1RFYXrconwwFVcYytO"/>
+</div>
+<div>
+<div class="font-bold text-on-background">Ananya Singh</div>
+<div class="text-xs text-secondary">UI/UX Designer, Zomato</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Form Section -->
+<section class="py-24 px-8 bg-surface-container-highest">
+<div class="max-w-5xl mx-auto bg-surface-container-lowest rounded-[2.5rem] overflow-hidden shadow-2xl flex flex-col md:flex-row">
+<div class="md:w-1/2 p-12 bg-[#556500] text-white flex flex-col justify-center">
+<h2 class="text-3xl font-black mb-6 leading-tight">Start Your Transformation Today</h2>
+<p class="opacity-80 mb-8">Fill out the form and our academic advisors will reach out to you within 24 hours to guide your career path.</p>
+<ul class="space-y-4">
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-[#b9d719]">check_circle</span>
+<span class="text-sm font-medium">Free Career Counseling Session</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-[#b9d719]">check_circle</span>
+<span class="text-sm font-medium">Detailed Course Brochure</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-[#b9d719]">check_circle</span>
+<span class="text-sm font-medium">Access to Demo Lectures</span>
+</li>
+</ul>
+</div>
+<div class="md:w-1/2 p-12">
+<form class="space-y-6">
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-secondary mb-2">Full Name</label>
+<input class="w-full px-6 py-4 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 text-on-background placeholder:text-secondary/50" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-secondary mb-2">Phone Number</label>
+<input class="w-full px-6 py-4 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 text-on-background placeholder:text-secondary/50" placeholder="+91 00000 00000" type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-widest text-secondary mb-2">Course of Interest</label>
+<select class="w-full px-6 py-4 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-primary/40 text-on-background">
+<option>Select a Course</option>
+<option>Full Stack Development</option>
+<option>Data Science &amp; AI</option>
+<option>Digital Marketing</option>
+<option>Cyber Security</option>
+</select>
+</div>
+<button class="w-full signature-gradient text-on-primary-fixed py-5 rounded-full font-bold text-lg shadow-xl shadow-primary/20 hover:opacity-90 active:scale-95 transition-all">Claim Your Free Counseling</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2.5rem] mt-20 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-black text-slate-900 dark:text-white mb-4 block">Super Computer Institute</span>
+<p class="text-slate-500 dark:text-slate-400 font-['Inter'] text-sm leading-relaxed mb-6">
+                    Empowering the next generation of tech leaders with precision and excellence since 2010.
+                </p>
+<div class="flex space-x-4">
+<a class="text-slate-400 hover:text-[#556500] transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-[#556500] transition-colors" href="#"><span class="material-symbols-outlined">video_library</span></a>
+<a class="text-slate-400 hover:text-[#556500] transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-on-background font-bold mb-6">Institute</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">Our Methodology</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">Career Support</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">Student Portal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-background font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] transition-all text-sm" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-background font-bold mb-6">Newsletter</h4>
+<p class="text-xs text-slate-500 mb-4">Get the latest course updates and tech insights.</p>
+<div class="flex items-center bg-surface-container-high rounded-full px-4 py-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full" placeholder="Email address" type="email"/>
+<button class="text-primary"><span class="material-symbols-outlined">send</span></button>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 max-w-7xl mx-auto py-8 text-center text-slate-500 dark:text-slate-400 text-xs font-['Inter']">
+            © 2024 Super Computer Institute. Precision in Education.
+        </div>
+</footer>
+<!-- SideNavBar (CTA FAB) -->
+<div class="fixed bottom-8 right-8 z-[100]">
+<button class="bg-[#b9d719] dark:bg-[#556500] h-16 w-16 rounded-full flex items-center justify-center shadow-[0_20px_40px_rgba(24,28,32,0.1)] hover:scale-110 hover:rotate-3 active:scale-90 transition-all duration-300 text-[#181c20] dark:text-white">
+<span class="material-symbols-outlined" data-icon="chat_bubble" style="font-size: 32px;">chat_bubble</span>
+</button>
+<div class="absolute right-20 bottom-2 bg-[#b9d719] px-4 py-2 rounded-lg whitespace-nowrap shadow-lg hidden group-hover:block">
+<span class="text-xs font-bold font-['Inter'] tracking-widest text-[#181c20]">QUICK INQUIRY</span>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#d8e2ff",
+                        "surface-container-high": "#e5e8ee",
+                        "primary": "#556500",
+                        "secondary": "#5b5f63",
+                        "secondary-fixed-dim": "#c3c7cc",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#5f6368",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#001a41",
+                        "tertiary-container": "#b2caff",
+                        "on-primary-container": "#4d5b00",
+                        "inverse-primary": "#b6d312",
+                        "background": "#f7f9ff",
+                        "tertiary-fixed-dim": "#adc7ff",
+                        "surface-container-highest": "#e0e3e8",
+                        "outline": "#767962",
+                        "surface-container": "#ebeef3",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#e0e3e8",
+                        "inverse-on-surface": "#eef1f6",
+                        "surface-bright": "#f7f9ff",
+                        "primary-fixed-dim": "#b6d312",
+                        "on-surface": "#181c20",
+                        "surface-container-low": "#f1f4f9",
+                        "secondary-container": "#dde0e5",
+                        "outline-variant": "#c6c9ae",
+                        "on-primary-fixed": "#181e00",
+                        "on-background": "#181c20",
+                        "primary-fixed": "#d1f038",
+                        "on-secondary-fixed": "#181c20",
+                        "surface-variant": "#e0e3e8",
+                        "primary-container": "#b9d719",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f7f9ff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#0052ad",
+                        "tertiary": "#005bc0",
+                        "surface-dim": "#d7dadf",
+                        "on-surface-variant": "#454934",
+                        "inverse-surface": "#2d3135",
+                        "on-primary-fixed-variant": "#404c00",
+                        "on-tertiary-fixed-variant": "#004493",
+                        "surface-tint": "#556500",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#43474c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
+<div class="text-xl font-bold tracking-tighter text-[#181c20] dark:text-white">
+                Super Computer Institute
+            </div>
+<nav class="hidden md:flex items-center space-x-8 font-['Inter'] font-medium text-sm tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors" href="#">Home</a>
+<a class="text-[#556500] dark:text-[#b9d719] font-bold border-b-2 border-[#556500] pb-1" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors" href="#">Paramedical</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#556500] transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:block text-slate-600 font-medium text-sm hover:text-primary px-4 py-2 transition-all">Inquire Now</button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-bold text-sm scale-95 active:scale-90 transition-transform hover:shadow-lg">
+                    Enroll Now
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Page Header & Filter Section -->
+<section class="mb-16">
+<div class="max-w-3xl">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-3 block">Professional Programs</span>
+<h1 class="text-5xl md:text-6xl font-black text-on-background tracking-tight leading-tight mb-6">
+                    Master the Digital <br/>Frontier
+                </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl mb-10">
+                    Industry-aligned computer courses designed to take you from foundational knowledge to professional expertise. Select your path and start your journey today.
+                </p>
+</div>
+<!-- Search & Filter Bar -->
+<div class="flex flex-col md:flex-row gap-4 items-center p-2 bg-surface-container-low rounded-2xl md:rounded-full">
+<div class="relative w-full md:flex-1">
+<span class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-14 pr-6 py-4 bg-surface-container-lowest rounded-xl md:rounded-full border-none focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-on-surface-variant/50" placeholder="Search for courses (e.g. Fullstack, Design...)" type="text"/>
+</div>
+<div class="flex gap-2 w-full md:w-auto overflow-x-auto pb-2 md:pb-0 px-2 md:px-0">
+<button class="px-6 py-3 bg-primary-container text-on-primary-container rounded-full text-sm font-bold whitespace-nowrap">All Courses</button>
+<button class="px-6 py-3 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium whitespace-nowrap hover:bg-surface-container-highest transition-colors">Development</button>
+<button class="px-6 py-3 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium whitespace-nowrap hover:bg-surface-container-highest transition-colors">Design</button>
+<button class="px-6 py-3 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium whitespace-nowrap hover:bg-surface-container-highest transition-colors">Cybersecurity</button>
+</div>
+</div>
+</section>
+<!-- Course Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Course Card 1: Python Pro -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] flex flex-col">
+<div class="h-48 w-full rounded-lg mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="clean dark screen showing colorful python code with soft neon highlights and professional coding environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUnkF6hn4XPaZQ0aV92jv3vh0WPvwPUIG3XBMAjpBZzXyEVgAF0C1KOS60ZxxG2t1wPLWpykSb57jmkOdXD8wZghtlsifsOYchwR3WMLjiiM4lweerwsdGxb3OICde07rGdzv2FYJ8IqmyP6wDw6DwV6sU9wG53VXnvvSngwqYE6C9QMYjdo6K4s3M2l58e1f6DvkNnk8AbqryqQr6aX2rDfmgqutFdv8-qHlCcCbpvLWwUfWEj0rRqk03vHKhXXfixTsSk05B6JyU"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Most Popular</div>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">6 Months Duration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-4">Python Pro Mastery</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Advanced Data Science Libraries
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Django &amp; Flask Web Frameworks
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Automation &amp; Scripting
+                    </li>
+</ul>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-full font-bold text-sm transition-all hover:shadow-md active:scale-95">
+                    Enquire for Details
+                </button>
+</div>
+<!-- Course Card 2: Java Master -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] flex flex-col">
+<div class="h-48 w-full rounded-lg mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="abstract digital representation of java coffee cup logo with binary data streams and professional technology aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeDg4qd9KzV7YB-n9h71Epi95G-ZhQFVsFvSOaKuXq9_1lZKgqfndNbW_ZBe0gh8NPRZ5Lovh32zs77rHqxNvsNPb3v63Yb5OlSvc4q4HfOf2CuzjX7KQ4dpALdXjor9aAA_8BFDOCd5tf7p4aMJ82HVZS3Cpt6cYaPzgEBfFgo1X7d4fi8sayQN11OHy4Cs3WrBBuaXjs0zepXEOdPejBTaThkCyR04LMbBaI6JuLijE9RPOh3w35Ir4BKTNLRfp6gkFTs7oKpkT7"/>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">8 Months Duration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-4">Enterprise Java Master</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Spring Boot Ecosystem
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Microservices Architecture
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Oracle Database Integration
+                    </li>
+</ul>
+<button class="w-full bg-surface-container-high text-on-surface-variant py-4 rounded-full font-bold text-sm transition-all hover:bg-primary-container hover:text-on-primary-container active:scale-95">
+                    Enquire for Details
+                </button>
+</div>
+<!-- Course Card 3: UI/UX Design -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] flex flex-col">
+<div class="h-48 w-full rounded-lg mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern minimalist design workspace with digital tablet showing sleek user interface layouts and colorful gradients" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhnIHZPXsxu3julHo0RCHg9YTlMK_FF-0hGRYZ-S8VAXVbL5Vb4SlRDgnIPHEQZgrd2jEtVvl3x2IVTT96pqNCdS_QpKJ-HDgN6ZZWhvrWU2OL2g9H3oFoMx3EIjNEMpumfpF4n3ehz3gJbo09RPTek3Q4ox2EuCvEpHSE3n9gweNxklIBZ0zm5aRmpk0x2mlrx_9k8ARSu8GLRbg7LiaOjqCO3ShmK3p-1wgImZ27YowWBlxhI_BsR5XZjuACpmd-o-QdvVRngk21"/>
+<div class="absolute top-4 left-4 bg-tertiary text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">New Program</div>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">4 Months Duration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-4">Visual UI/UX Design</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Figma &amp; Adobe XD Expert
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        User Research &amp; Persona Building
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Interactive Prototyping
+                    </li>
+</ul>
+<button class="w-full bg-surface-container-high text-on-surface-variant py-4 rounded-full font-bold text-sm transition-all hover:bg-primary-container hover:text-on-primary-container active:scale-95">
+                    Enquire for Details
+                </button>
+</div>
+<!-- Course Card 4: Cyber Security -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] flex flex-col">
+<div class="h-48 w-full rounded-lg mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="dramatic dark background with digital security shield and glowing data patterns signifying high tech protection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6JEHM-QL6LPcbEcZ6nRYwCobz1DiBtGf7MzITQT_5KXNcWrOd6k-jgTWp-quE8xDzakVuE6UD0MLxRlekedOSzUhrCAjHGJJXdhjsV7Mq5BtfxhuQWseiSgxSH5xZi6xwmlw5sJL8lVNLN0EWjEFNWcB3nuvBdUyDHeUsUsvOXnWA1-E5ja-0ow8aYO0YSXzvri9L-OaxF3Hd14-n4eAcwPPBH9apV8LRzTa30T5Js4iA0jHRSzHsjTuXpmTwtvhiZkR305eiDnax"/>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">12 Months Duration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-4">Ethical Hacking &amp; Security</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Network Vulnerability Assessment
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Cloud Security Fundamentals
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Penetration Testing Tools
+                    </li>
+</ul>
+<button class="w-full bg-surface-container-high text-on-surface-variant py-4 rounded-full font-bold text-sm transition-all hover:bg-primary-container hover:text-on-primary-container active:scale-95">
+                    Enquire for Details
+                </button>
+</div>
+<!-- Course Card 5: AI & Machine Learning -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] flex flex-col">
+<div class="h-48 w-full rounded-lg mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="sophisticated neural network visualization with bright connections on a dark sleek background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqkzpU6FJArdx7pB5LpPXTyNnOZjRcO7gWlesu3K4eDBD69-vzLadlYu6iYuQgYo7gZFTtcSIKrEKLiBbLBsJPJ7sqQUwcjdDD_CJY64lRHa53i6vtQQ0hpdq7qQY4yArdHCgx9FY5WihtvlBd-m5M1aASGESOWeEky7aE4St71oqb-imthBvfPPxOA8qS4j9uCjprDOudphSbr_gCoksAg6iKrl9nnk6t4vRF6Q6LwmhtdpWGoVc-mbrI59okArs5iflhcIyxGxQz"/>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">10 Months Duration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-4">AI &amp; Machine Learning</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Deep Learning with PyTorch
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Natural Language Processing
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Data Visualization Techniques
+                    </li>
+</ul>
+<button class="w-full bg-surface-container-high text-on-surface-variant py-4 rounded-full font-bold text-sm transition-all hover:bg-primary-container hover:text-on-primary-container active:scale-95">
+                    Enquire for Details
+                </button>
+</div>
+<!-- Course Card 6: Fullstack Web -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_40px_rgba(24,28,32,0.06)] flex flex-col border-2 border-primary/10">
+<div class="h-48 w-full rounded-lg mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern web developer workspace with multiple monitors showing complex web application architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH0-icVhLRw5ExXN44Voss0cMIm9cd9YT1GCmCiQz5WfxDiDUfaolTOiqkVVwrgFe5n54QGGKK-YigeDZbhKfaqcl1bBKLAYajI_LpmOe7pz4JXML5ricEg3YdLvw0mBbsd99GnQS6wfuVDLHBwT1WmYGY4iNafl2cyOIosUs5g60LZJ0NOL75jQggvQdY2v-J86rY7aZ1tJMMeqRvJqiE6EL_98r7wOqLqWebwdd8s9uDXCWQ0zNlzPs6zdXI6EzNFrKRTDYbie5B"/>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs font-semibold text-on-surface-variant">9 Months Duration</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-4">Fullstack Web Engineering</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        React, Next.js &amp; TypeScript
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        Node.js &amp; Express Backend
+                    </li>
+<li class="flex items-start gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
+                        PostgreSQL &amp; Redis Caching
+                    </li>
+</ul>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-full font-bold text-sm transition-all hover:shadow-md active:scale-95">
+                    Enquire for Details
+                </button>
+</div>
+</div>
+<!-- Featured Inquiry Section -->
+<section class="mt-32 p-12 bg-surface-container-low rounded-[2.5rem] relative overflow-hidden">
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-black tracking-tight mb-6 leading-tight">Can't decide which <br/>course is for you?</h2>
+<p class="text-on-surface-variant mb-8 text-lg">Our expert academic advisors are here to help you map your career path based on your goals and current skills.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm hover:shadow-xl transition-all">Schedule a Call</button>
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-full font-bold text-sm hover:shadow-lg transition-all">Download Brochure</button>
+</div>
+</div>
+<div class="hidden md:block">
+<img class="rounded-xl shadow-2xl rotate-2" data-alt="professional academic advisor in a modern bright office environment having a friendly conversation with a student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJg-xpULrvNholz99GspWyvEty3Wb9oLBcmW83a7mdCa-WMeb5zdRrIdKrt3aj06CLKhg_0lvD9nlau7w3aXPbZPEt4YzRTpF4ZIj-Ezz5G0DC74wm7Zb4Kl4ZJ9LoBMnO4dc-yvmcdQPtb_bssF80MdA7Sk2Vd1CR9byJBOdbPZdUMMl95nFhVQfMSramjiUah1gpGo3O3lR_GnyvrkPcAoqA_jyr7IGrI6mBkKdpjOl8Im0tcj7xefLctWUxNgAPMLV-eCpOSjK9"/>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+</section>
+</main>
+<!-- SideNavBar (Quick Inquiry FAB) -->
+<div class="fixed bottom-8 right-8 z-[100]">
+<div class="group relative flex items-center gap-4">
+<div class="hidden group-hover:block bg-surface-container-lowest px-6 py-3 rounded-2xl shadow-xl border border-surface-container-high transition-all">
+<p class="text-on-surface font-bold text-sm">Need Help?</p>
+<p class="text-on-surface-variant text-[10px] uppercase tracking-widest">Chat with an advisor</p>
+</div>
+<button class="bg-[#b9d719] text-[#181c20] h-16 w-16 rounded-full flex items-center justify-center shadow-[0_20px_40px_rgba(24,28,32,0.1)] hover:scale-110 hover:rotate-3 transition-all duration-300 active:scale-90">
+<span class="material-symbols-outlined text-2xl" data-icon="chat_bubble">chat_bubble</span>
+</button>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full rounded-t-[2.5rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto font-['Inter'] text-sm leading-relaxed">
+<div class="md:col-span-1">
+<span class="text-lg font-black text-slate-900 dark:text-white mb-4 block">Super Computer Institute.</span>
+<p class="text-slate-500 dark:text-slate-400 mb-6">Empowering the next generation of tech leaders through rigorous curriculum and expert mentorship.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] dark:hover:text-[#b9d719] transition-all" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] dark:hover:text-[#b9d719] transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] dark:hover:text-[#b9d719] transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-6">Student Center</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] dark:hover:text-[#b9d719] transition-all" href="#">Student Portal</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] dark:hover:text-[#b9d719] transition-all" href="#">Career Support</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-[#556500] dark:hover:text-[#b9d719] transition-all" href="#">Alumni Stories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 dark:text-white mb-6">Contact</h4>
+<p class="text-slate-500 dark:text-slate-400 mb-2">123 Tech Campus Drive</p>
+<p class="text-slate-500 dark:text-slate-400 mb-2">Innovation District</p>
+<p class="text-primary font-bold mt-4">info@supercomputer.edu</p>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-xs">© 2024 Super Computer Institute. Precision in Education.</p>
+<div class="flex gap-6 text-xs font-bold uppercase tracking-widest text-[#556500] dark:text-[#b9d719]">
+<span>Excellence</span>
+<span>Innovation</span>
+<span>Mastery</span>
+</div>
+</div>
+</footer>
+</body></html>
