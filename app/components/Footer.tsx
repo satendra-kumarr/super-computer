@@ -62,7 +62,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-200 dark:border-slate-800 max-w-7xl mx-auto px-6 md:px-12 py-6 md:py-8 text-center text-slate-500 dark:text-slate-400 text-xs font-['Inter']">
-        © 2026 Super Computer College of IT. Precision in Education.
+        <p>© 2026 Super Computer College of IT. Precision in Education.</p>
+        <p className="mt-2 text-[11px] text-slate-400 dark:text-slate-500">
+          Designed & Developed by{' '}
+          <a href="https://techosiz.com" target="_blank" rel="noopener" className="font-semibold text-[#556500] dark:text-[#b9d719] hover:underline transition-colors">
+            Techosiz
+          </a>
+        </p>
       </div>
     </footer>
   );

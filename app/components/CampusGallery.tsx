@@ -8,8 +8,8 @@ export default function CampusGallery() {
 
   // High-quality placeholder images for the campus gallery
   const images = [
-    { id: 1, src: "/images/IMG-01.jpg", alt: "IMG-01" },
-    { id: 2, src: "/images/IMG-2.jpeg", alt: "IMG-2" },
+    { id: 1, src: "/images/IMG-15.png", alt: "IMG-01" },
+    // { id: 2, src: "/images/IMG-2.jpeg", alt: "IMG-2" },
     { id: 3, src: "/images/IMG-3.jpeg", alt: "IMG-3" },
     { id: 4, src: "/images/IMG-4.jpeg", alt: "IMG-4" },
     { id: 5, src: "/images/IMG-5.jpeg", alt: "IMG-5" },
@@ -22,7 +22,7 @@ export default function CampusGallery() {
     { id: 12, src: "/images/IMG-1.jpg", alt: "IMG-1" },
     { id: 13, src: "/images/IMG-13.jpg", alt: "IMG-13" },
     { id: 14, src: "/images/IMG-14.jpg", alt: "IMG-14" },
-    { id: 15, src: "/images/IMG-15.jpeg", alt: "IMG-15" },
+    { id: 15, src: "/images/IMG-01.jpg", alt: "IMG-15" },
   ];
 
   const displayedImages = showAll ? images : images.slice(0, 3);

@@ -1,9 +1,69 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import FadeIn from '../components/FadeIn';
+import JsonLd from '../components/JsonLd';
+
+export const metadata: Metadata = {
+  title: "Contact Us — Admissions & Enquiry",
+  description:
+    "Contact Super Computer College of IT, Fatehpur. Call +91 7355150194 or visit 13 Murain Tola, Near Police Chowki, Fatehpur, UP 212601. Admissions open for IT, degree & paramedical courses.",
+  keywords: [
+    "contact super computer college",
+    "super computer college fatehpur address",
+    "super computer institute phone number",
+    "admission enquiry fatehpur",
+    "computer institute near me fatehpur",
+  ],
+  alternates: { canonical: "/contact" },
+};
+
+const contactSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Contact Super Computer College of IT",
+    url: "https://supercomputerit.in/contact",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Super Computer College of IT",
+    image: "https://supercomputerit.in/images/logo.png",
+    telephone: "+917355150194",
+    email: "supercomputercollegeofit194@gmail.com",
+    url: "https://supercomputerit.in",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "13 Murain Tola, Near Police Chowki",
+      addressLocality: "Fatehpur",
+      addressRegion: "Uttar Pradesh",
+      postalCode: "212601",
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 25.928930,
+      longitude: 80.812206,
+    },
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "20:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "16:00" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://supercomputerit.in" },
+      { "@type": "ListItem", position: 2, name: "Contact", item: "https://supercomputerit.in/contact" },
+    ],
+  },
+];
 
 export default function Contact() {
   return (
     <>
+      <JsonLd data={contactSchema} />
 
       <main className="pt-32 pb-20 px-6 max-w-7xl mx-auto">
         {/* Hero Section */}
@@ -93,14 +153,7 @@ export default function Contact() {
             </div>
 
             {/* Support Card */}
-            <div className="bg-primary-fixed text-on-primary-fixed p-8 rounded-xl relative overflow-hidden">
-              <div className="relative z-10">
-                <h3 className="text-lg font-bold mb-2">Student Support</h3>
-                <p className="text-sm opacity-90 mb-4">Already a student? Access the portal for technical assistance.</p>
-                <button className="bg-on-primary-fixed text-primary-fixed px-6 py-2 rounded-full font-bold text-sm">Go to Portal</button>
-              </div>
-              <span className="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl opacity-10 rotate-12" style={{ fontVariationSettings: "'FILL' 1" }}>school</span>
-            </div>
+           
           </FadeIn>
 
           {/* Inquiry Form — RIGHT */}
